@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_Image"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/someone" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="70dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_Id"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="000000000"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/user_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="111111111"
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/focus"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:background="@color/md_indigo_50"
+                android:text="关注"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+
+            android:id="@+id/record_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaaaaaaaaaaaaa"
+            android:textSize="13sp"
+
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageButton
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@color/back"
+                android:src="@drawable/music"
+
+                />
+
+            <ImageButton
+                android:id="@+id/btnPlayUrl"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/back"
+                android:src="@drawable/play"
+
+                />
+
+            <ImageButton
+                android:id="@+id/btnPause"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@color/back"
+                android:src="@drawable/stop"
+                android:text="暂停"
+                android:visibility="gone">
+
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/Continue"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@color/back"
+                android:src="@drawable/play"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/record_Disc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="wwwwwwww"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/skbProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:max="100"></SeekBar>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/layout"
+        android:orientation="vertical"
+
+        >
+
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:background="@color/back"
+                android:src="@drawable/comment" />
+
+            <TextView
+                android:id="@+id/comment_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textSize="10sp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/layout1"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/layout1"
+            android:layout_toStartOf="@+id/layout1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/parise"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:background="@color/back"
+                android:src="@drawable/parise" />
+
+
+            <TextView
+                android:id="@+id/parise_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textSize="10sp"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout2"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_comment_other"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal">
+
+
+        <EditText
+            android:id="@+id/comment_context"
+            style="?android:attr/textViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/send"
+            android:layout_toStartOf="@+id/send"
+            android:background="@color/md_grey_300"
+            android:gravity="center_vertical"
+            android:hint="说点什么吧..."
+            android:padding="2dp"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/comment_context"
+            android:background="@color/md_grey_300"
+            android:padding="2dp"
+            android:text="发送"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

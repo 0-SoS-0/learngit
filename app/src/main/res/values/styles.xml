@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/back</item>
+        <item name="colorPrimaryDark">@color/md_grey_800</item>
+        <item name="colorAccent">@color/action_color</item>
+    </style>
+    <style name="TextStyle">
+        <item name="android:textColor">@color/action_color</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:homeAsUpIndicator">@mipmap/back</item>
+        <item name="android:actionMenuTextColor">@color/title_color</item>
+        <item name="android:textSize">18sp</item>
+        <item name="titleTextColor">@color/title_color</item>
+    </style>
+    <style name="PopupAnimation" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/anim_popu_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_popu_exit</item>
+    </style>
+
+
+    <!-- RecordignDialog的风格——setttinguserpassworddialog-->
+    <style name="recorddialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_title_image</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+</resources>

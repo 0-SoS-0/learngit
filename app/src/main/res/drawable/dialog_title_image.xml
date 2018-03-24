@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:bottomLeftRadius="4dp"
+        android:bottomRightRadius="4dp"
+        android:topLeftRadius="4dp"
+        android:topRightRadius="4dp" />
+    <!-- 描边 -->
+    <!--  <stroke
+          android:width="1dp"
+          android:color="#FF0CDADA"/>-->
+    <!-- 渐变 -->
+    <solid
+        android:color="@color/md_grey_200"
+        />
+</shape>

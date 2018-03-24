@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menulayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+    >
+
+    <LinearLayout
+        android:id="@+id/palay_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/back"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="3dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@color/back" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/music" />
+
+            <!-- <ImageButton
+                 android:id="@+id/btnPause"
+                 android:layout_width="55dp"
+                 android:layout_height="55dp"
+                 android:background="@color/back"
+                 android:src="@drawable/stop"
+                 android:layout_marginLeft="5dp"
+                 android:text="暂停"
+                 android:visibility="gone">
+
+
+             </ImageButton>
+
+             <ImageButton
+                 android:id="@+id/btnContinue"
+                 android:layout_width="55dp"
+                 android:layout_height="55dp"
+                 android:background="@color/back"
+                 android:src="@drawable/play"
+                 android:layout_marginLeft="5dp"
+                 android:visibility="gone" />
+
+             <ImageButton
+                 android:id="@+id/btnPlayUrl"
+                 android:layout_width="55dp"
+                 android:layout_height="55dp"
+                 android:background="@color/back"
+                 android:src="@drawable/play"
+                 android:layout_marginLeft="5dp"
+                 />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/item_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="00000" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnTop"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="#d9dee4"
+        android:text="置顶"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="#ecd50a"
+        android:clickable="true"
+        android:text="上传"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="@color/red_ff4a57"
+        android:text="删除"
+        android:textColor="@android:color/white" />
+
+
+</com.example.swipemenulib.SwipeMenuLayout>

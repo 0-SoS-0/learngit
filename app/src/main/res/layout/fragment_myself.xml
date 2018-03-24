@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/back"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/setting"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_200"
+    >
+
+    <LinearLayout
+        android:id="@+id/myself"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/back"
+        android:orientation="horizontal">
+        <com.example.hp.oralpractice.util.CircleImageView
+            android:id="@+id/iv_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/someone"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaaa"
+            android:textSize="15sp"
+            android:textColor="@color/md_grey_800"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"/>
+        <TextView
+            android:id="@+id/tv_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="查看或编辑个人资料"
+            android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_btn_follower"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/myself"
+        android:layout_marginTop="10dp"
+        android:background="@color/back"
+        android:drawableLeft="@mipmap/follower"
+        android:drawablePadding="16dp"
+        android:drawableRight="@drawable/fragmentation_ic_right"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="我的关注"
+        android:textColor="@color/text_color"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_btn_uploading"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_btn_follower"
+        android:background="@color/back"
+        android:drawableLeft="@mipmap/record"
+        android:drawablePadding="16dp"
+        android:layout_marginTop="3dp"
+        android:drawableRight="@drawable/fragmentation_ic_right"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="已上传录音"
+        android:textColor="@color/text_color"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/tv_btn_record"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/tv_btn_uploading"
+        android:layout_marginTop="3dp"
+        android:background="@color/back"
+        android:drawableLeft="@mipmap/record"
+        android:drawablePadding="16dp"
+        android:drawableRight="@drawable/fragmentation_ic_right"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="录音"
+        android:textColor="@color/text_color"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_btn_collect"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_btn_record"
+        android:layout_marginTop="3dp"
+        android:background="@color/back"
+        android:drawableLeft="@mipmap/follower"
+        android:drawablePadding="16dp"
+        android:drawableRight="@drawable/fragmentation_ic_right"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="收藏"
+        android:textColor="@color/text_color"
+        android:textSize="15sp" />
+
+
+
+    <TextView
+        android:id="@+id/tv_btn_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_btn_collect"
+        android:layout_marginTop="3dp"
+        android:background="@color/back"
+        android:drawableLeft="@mipmap/record"
+        android:drawablePadding="16dp"
+        android:drawableRight="@drawable/fragmentation_ic_right"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="帮助与反馈"
+        android:textColor="@color/text_color"
+        android:textSize="15sp" />
+</RelativeLayout>
+</LinearLayout>

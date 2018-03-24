@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">OralPractice</string>
+    press_to_say
+    <string name="speaking">正在说话...</string>
+    <string name="press_to_say">按住说话...</string>
+</resources>

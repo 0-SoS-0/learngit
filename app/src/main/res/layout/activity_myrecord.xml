@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_toolbar" />
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include">
+
+    </ListView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+       android:background="@color/line"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="60dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/play_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                />
+
+            <SeekBar
+                android:id="@+id/skbProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@color/md_pink_300"
+                android:max="100">
+
+
+            </SeekBar>
+
+
+        </LinearLayout>
+
+        <!--  <ImageButton
+              android:id="@+id/btnPlayUrl"
+              android:layout_width="55dp"
+              android:layout_height="55dp"
+              android:background="@color/back"
+              android:src="@drawable/play"
+              android:layout_marginLeft="5dp"
+              android:layout_alignParentRight="true"
+              />-->
+
+        <ImageButton
+            android:id="@+id/btnPause"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/stop"
+            android:text="暂停"
+            android:visibility="gone" />
+
+
+        <ImageButton
+            android:id="@+id/btnContinue"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/play"
+
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

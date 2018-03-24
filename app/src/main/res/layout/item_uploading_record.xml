@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/back"
+        >
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="2dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@color/md_cyan_50"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/music" />
+
+        <ImageButton
+            android:layout_marginLeft="5dp"
+            android:id="@+id/btnPlayUrl"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@color/back"
+            android:src="@drawable/play"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btnPause"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/back"
+            android:src="@drawable/stop"
+            android:text="暂停"
+            android:visibility="gone">
+
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Continue"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/back"
+            android:src="@drawable/play"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/item_tv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="00000" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/skbProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:max="100"
+            android:visibility="gone"
+            >
+
+        </SeekBar>
+    </LinearLayout>
+
+
+</LinearLayout>
